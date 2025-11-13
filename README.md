@@ -1,35 +1,30 @@
-# pymongo-api
+# Спринт 4
 
-## Как запустить
+## Задачи
+### Задание 1. Планирование
+Схемы:
+[1](schemas/1.drawio)
+[2](schemas/2.drawio)
+[3](schemas/3.drawio)
 
-Запускаем mongodb и приложение
+### Задание 2. Шардирование
+[Реализация](mongo-sharding/compose.yaml)
 
-```shell
-docker compose up -d
-```
+### Задание 3. Репликация
+[Реализация](mongo-sharding-repl/compose.yaml)
 
-Заполняем mongodb данными
+### Задание 4. Кеширование
+[Реализация](sharding-repl-cache/compose.yaml)
 
-```shell
-./scripts/mongo-init.sh
-```
 
-## Как проверить
+> Инструкции по запуску находятся в readme.md в папках с заданиями
 
-### Если вы запускаете проект на локальной машине
 
-Откройте в браузере http://localhost:8080
+### Задание 5. Service Discovery и балансировка с API Gateway
+Схема:
+[4](schemas/4.drawio)
 
-### Если вы запускаете проект на предоставленной виртуальной машине
+### Задание 6. CDN
+Схема:
+[5](schemas/5.drawio)
 
-Узнать белый ip виртуальной машины
-
-```shell
-curl --silent http://ifconfig.me
-```
-
-Откройте в браузере http://<ip виртуальной машины>:8080
-
-## Доступные эндпоинты
-
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
